@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package moviereview.view;
+package view;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,10 +8,6 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Orenji
- */
 public class MovieView extends JFrame{
     JLabel lTitle = new JLabel("Title");
     JLabel lPlot = new JLabel("Plot");
@@ -100,5 +91,21 @@ public class MovieView extends JFrame{
     
     public String getAkting(){
         return tfActing.getText();
+    }
+    
+    public void setTitle(){
+        tfTitle.setText("");
+    }
+    
+    public void setPlot(){
+        tfPlot.setText("");
+    }
+    
+    public void setCharacter(){
+        tfChararter.setText("");
+    }
+    
+    public void setAction(){
+        tfActing.setText("");
     }
 }
