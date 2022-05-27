@@ -30,7 +30,7 @@ public class MovieController {
                 String title = movieView.getJudul();
                 String plot = movieView.getAlur();
                 String character = movieView.getPenokohan();
-                String acting = movieView.getPenokohan();
+                String acting = movieView.getAkting();
                 movieModel.insertMovide(title, plot, character, acting);
                 String dataMovie[][] = movieModel.readMovie();
                 movieView.table.setModel((new JTable(dataMovie, header)).getModel());
@@ -43,7 +43,7 @@ public class MovieController {
                 String title = movieView.getJudul();
                 String plot = movieView.getAlur();
                 String character = movieView.getPenokohan();
-                String acting = movieView.getPenokohan();
+                String acting = movieView.getAkting();
                 movieModel.updateMovie(title, plot, character, acting);
                 String dataMovie[][] = movieModel.readMovie();
                 movieView.table.setModel((new JTable(dataMovie, header)).getModel());
